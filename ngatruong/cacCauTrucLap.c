@@ -1,7 +1,6 @@
 A)Cấu trúc lặp for
 1.Cú pháp: 
-            for (biểu thức 1; biểu thức 2; biểu thức 3)
-            Khối lệnh; 
+            for (biểu thức 1; biểu thức 2; biểu thức 3)            Khối lệnh; 
 Trong đó: 
     Biểu thức 1: biểu thức khởi đầu.
     Biểu thức 2: biểu thức điều kiện - điều kiện lặp.
@@ -21,8 +20,7 @@ Sự hoạt động của vòng lặp for:
  * SƠ ĐỒ KHỐI
    ![ ](http://1.bp.blogspot.com/-ognNzsULg8E/TgYeKlQenLI/AAAAAAAAABY/AVGrzmQ9B0M/s1600/1.bmp)
    2.VÍ DỤ 
-   #include<stdio.h>
-   
+   #include<stdio.h>   
    #include<conio.h>
    
    void main()
@@ -59,7 +57,6 @@ SƠ ĐỒ KHỐI
 #include <stdio.h> 
 
  # define PASSWORD 
-
  void main(void) 
 
  {  
@@ -73,10 +70,44 @@ SƠ ĐỒ KHỐI
     printf("Nhap vao password: "); 
 
     scanf("%d", &in);
-
    }
 
    while (in != PASSWORD); 
 
  } 
- C)CẤU TRÚC LẶP 
+ C)CẤU TRÚC LẶP while
+ 1. Cú pháp:
+            while(biểu thức)
+            Khối lệnh;   
+
+Sự hoạt động của vòng lặp while:
+Bước 1: tính giá trị của (biểu thức) sau while
+Bước 2: nếu giá trị tính được của (biểu thức) là ‘sai’ (==0) thì kết thúc  vòng lặp while. 
+Bước 3: nếu giá trị của (biểu thức) là ‘đúng’ (!=0) thì thực hiện khối lệnh sau while.
+Bước 4: quay lại bước 1
+  SƠ ĐỒ KHỐI
+  ![ ](http://icviet.vn/upload/images/lap%20trinh%20c%20co%20ban/Bai%206/1.PNG)
+    2.ví dụ 
+ #include <stdio.h> 
+
+#include <conio.h> 
+
+void main()
+
+{
+  int i = 0, in, is = 0; 
+
+  printf("Nhap vao so n: ");
+
+  scanf("%d", &in);  
+
+  while (i++ < in) 
+
+  is = is + i;   
+
+  printf("Tong: %d", is); 
+
+  getch();
+
+}  
+  
